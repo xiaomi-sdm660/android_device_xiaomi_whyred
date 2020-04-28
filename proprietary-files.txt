@@ -1,5 +1,8 @@
-# Audio Power Amplifier
+# Audio Firmware
+vendor/firmware/dbmd4_va_fw.bin
 vendor/firmware/tas2557_uCDSP.bin
+vendor/firmware/tfa98xx.cnt
+vendor/firmware/voice_amodel.bin
 
 # Audio - from LA.UM.8.2.r1-05100-sdm660.0
 vendor/lib/libacdb-fts.so|a2f09f2a01c326d6b57b1c0e406c92850ceef439
@@ -700,15 +703,6 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib/hw/gatekeeper.sdm660.so
 vendor/lib64/hw/gatekeeper.sdm660.so
 
-# Graphics firmware
-vendor/firmware/a512_zap.b00
-vendor/firmware/a512_zap.b01
-vendor/firmware/a512_zap.b02
-vendor/firmware/a512_zap.elf
-vendor/firmware/a512_zap.mdt
-vendor/firmware/a530_pfp.fw
-vendor/firmware/a530_pm4.fw
-vendor/firmware/a540_gpmu.fw2
 
 # Keystore
 vendor/lib/hw/keystore.sdm660.so
@@ -719,7 +713,6 @@ vendor/lib/sensors.ssc.so
 vendor/lib64/sensors.ssc.so
 
 # Thermal - from LA.UM.8.2.r1-04000-sdm660.0
-vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
-
-# VNDK
-vendor/lib/vndk/libbinder.so|094d702305c39f3988b9f586d47d4e8b10595ceb
+vendor/etc/thermal-engine.conf
+vendor/etc/thermal-engine-map.conf
+vendor/etc/thermal-engine-normal.conf
