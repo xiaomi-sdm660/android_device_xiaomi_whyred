@@ -79,6 +79,11 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.device.rc
 
+#Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.vibrator@1.0-service
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
@@ -91,6 +96,14 @@ PRODUCT_PACKAGES += \
 # Watermark
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/media/MIUI_DualCamera_watermark.png:$(TARGET_COPY_OUT_VENDOR)/etc/MIUI_DualCamera_watermark.png
+
+# ConsumerIR
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/whyred/whyred-vendor.mk)
