@@ -27,6 +27,9 @@
 
 DEVICE_PATH := device/xiaomi/whyred
 
+# FBE
+AONLY_FILEENCRYPTION := true
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
