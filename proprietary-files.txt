@@ -699,10 +699,17 @@ vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
-# Gatekeeper
-vendor/lib/hw/gatekeeper.sdm660.so
-vendor/lib64/hw/gatekeeper.sdm660.so
+# Gatekeeper - from twolip
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 
+# Keymaster - from twolip
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 
 # Keystore
 vendor/lib/hw/keystore.sdm660.so
