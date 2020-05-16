@@ -50,6 +50,9 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 838860800
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-11-01
 
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
